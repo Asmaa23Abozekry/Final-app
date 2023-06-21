@@ -1,6 +1,6 @@
 const Routes = Object.freeze({
     Home: "Home",
-    HomeTabs: "HomeTabs",
+    HomeTabs: "Home",
     Profile: "Profile",
     Shelter: "Shelter",
     Clinic: "Clinic",

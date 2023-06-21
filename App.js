@@ -91,7 +91,7 @@ export default function App() {
     <NavigationContainer>
       <Drawer.Navigator  >
         
-        <Drawer.Screen name={Routes.Home} component={HomeTabs} options={{
+        <Drawer.Screen name={Routes.HomeTabs} component={HomeTabs} options={{
             headerTitle: (props) => <Logo {...props} />,
             headerStyle: {
               backgroundColor: 'black',
