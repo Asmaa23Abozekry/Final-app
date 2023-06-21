@@ -2,6 +2,8 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
+import {GestureHandlerRootView} from "react-native-gesture-handler"
+import 'react-native-gesture-handler';
 import Routes from './Src/Common/Routes';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
@@ -88,6 +90,8 @@ function HomeTabs() {
 // Main component of the app
 export default function App() {
   return (
+
+    <GestureHandlerRootView style={{ flex: 1 }}>
     <NavigationContainer>
       <Drawer.Navigator  >
         
@@ -107,6 +111,7 @@ export default function App() {
         <Drawer.Screen name={Routes.LogIn} component={LogIn} />
       </Drawer.Navigator>
     </NavigationContainer>
+    </GestureHandlerRootView >
   );
 }
 
