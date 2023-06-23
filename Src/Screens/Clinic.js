@@ -141,7 +141,7 @@ const Clinics = () => {
     setIsModalVisible(false);
     setSelectedItem(null);
   };
-
+  
   const renderItem = ({ item }) => (
     <TouchableOpacity style={styles.itemContainer} >
       <Image source={item.image} style={styles.itemImage} />
